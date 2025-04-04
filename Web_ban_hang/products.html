@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sản phẩm</h1>
+        <nav>
+            <a href="index.html">Trang chủ</a> |
+            <a href="products.html">Sản phẩm</a> |
+            <a href="cart.html" id="cart-icon">Giỏ hàng</a> |
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+
+        <div class="product">
+            <h2>Sản phẩm A</h2>
+            <p>Giá: 100.000 VNĐ</p>
+            <button onclick="addToCart('Sản phẩm A', 100000)">Thêm vào giỏ</button>
+        </div>
+
+        <div class="product">
+            <h2>Sản phẩm B</h2>
+            <p>Giá: 200.000 VNĐ</p>
+            <button onclick="addToCart('Sản phẩm B', 200000)">Thêm vào giỏ</button>
+        </div>
+
+        <div class="product">
+            <h2>Sản phẩm C</h2>
+            <p>Giá: 300.000 VNĐ</p>
+            <button onclick="addToCart('Sản phẩm C', 300000)">Thêm vào giỏ</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

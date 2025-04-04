@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Giỏ hàng của bạn</h1>
+        <nav>
+            <a href="index.html">Trang chủ</a> |
+            <a href="products.html">Sản phẩm</a> |
+            <a href="cart.html" id="cart-icon">Giỏ hàng</a> |
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+
+        <ul id="cart-items"></ul>
+        <p id="total-quantity">Số lượng mặt hàng: 0</p>
+        <p id="total-price">Tổng giá: 0 VNĐ</p>
+        <button id="clear-cart" onclick="clearCart()">Xóa giỏ hàng</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
