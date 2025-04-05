@@ -1,109 +1,156 @@
+/* Giao diện tổng thể */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
+    background-color: #F8FCF6; 
+    color: #3d4a2a;
+}
+
+/* Header */
+header {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F3FCE7;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    width: 90%;
-    max-width: 800px;
-    background: white;
-    margin: 30px auto;
+main {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #333;
-    text-align: center;
+/* Logo */
+.logo {
+    width: 80px;
+    height: auto;
 }
 
-nav {
-    text-align: center;
-    margin-bottom: 20px;
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-nav a {
-    margin: 0 10px;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: #0077cc;
+    color: #3d4a2a;
+    font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* Container */
+.container {
+    padding: 20px;
 }
 
+/* Hiệu ứng sản phẩm */
 .product {
-    border: 1px solid #ddd;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    transition: transform 0.2s ease;
+    text-align: right;
+    transition: transform 0.3s ease-in-out;
 }
 
 .product:hover {
-    transform: scale(1.02);
-    background-color: #f9f9f9;
+    transform: scale(1.05);
 }
 
-button {
-    padding: 8px 12px;
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-button:hover {
-    background-color: #005fa3;
+.product, .cart-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: white;
+    text-align: center;
+}
+
+.product-img, .cart-item-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product h2, .cart-item-info h3 {
+    margin: 0;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-summary {
+    background: #eee;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
 }
 
 #cart-items {
-    list-style-type: none;
-    padding: 0;
-}
-
-#cart-items li {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 6px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
 }
 
-#cart-items button {
-    background-color: red;
-    padding: 4px 10px;
-    border: none;
+.total-container {
+    border: 2px solid #007acc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    text-align: right;
+    background-color: #e6f0ff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    background: #28a745;
     color: white;
-    border-radius: 5px;
+    padding: 10px;
+    border: none;
     cursor: pointer;
 }
 
-#total-price, #total-quantity {
-    font-weight: bold;
-    margin-top: 10px;
-    color: #444;
+.quantity-control {
+    margin: 10px 0;
 }
 
-/* Hiệu ứng rung icon giỏ hàng */
-.shake {
-    animation: shake 0.5s;
+.quantity-control button {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
 }
 
-@keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
+.button {
+    background-color: #6a8d48;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #4e6b32;
 }
