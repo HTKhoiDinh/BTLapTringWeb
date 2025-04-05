@@ -1,25 +1,30 @@
-<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Giỏ hàng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Giỏ hàng của bạn</h1>
+    <header>
+        <img src="images/img1.jpg" alt="Logo" class="logo">
         <nav>
-            <a href="index.html">Trang chủ</a> |
-            <a href="products.html">Sản phẩm</a> |
-            <a href="cart.html" id="cart-icon">Giỏ hàng</a> |
-            <a href="contact.html">Liên hệ</a>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="cart.html" style="color:red">Giỏ hàng</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
         </nav>
-
-        <ul id="cart-items"></ul>
-        <p id="total-quantity">Số lượng mặt hàng: 0</p>
-        <p id="total-price">Tổng giá: 0 VNĐ</p>
-        <button id="clear-cart" onclick="clearCart()">Xóa giỏ hàng</button>
-    </div>
-    <script src="script.js"></script>
+    </header>
+    </header>
+    <main>
+        <div id="cart-items" class="cart-container"></div>
+        <div class="cart-summary">
+            <h3>Tổng tiền: <span id="total-price">0</span> VND</h3>
+            <button class="checkout-btn">Thanh Toán</button>
+        </div>
+    </main>
+    <script defer src="script.js"></script>
 </body>
 </html>
