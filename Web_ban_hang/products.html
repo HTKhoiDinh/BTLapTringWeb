@@ -1,38 +1,38 @@
-<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Sản phẩm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Sản phẩm</h1>
+    <header>
+        <img src="images/img1.jpg" alt="Logo" class="logo">
         <nav>
-            <a href="index.html">Trang chủ</a> |
-            <a href="products.html">Sản phẩm</a> |
-            <a href="cart.html" id="cart-icon">Giỏ hàng</a> |
-            <a href="contact.html">Liên hệ</a>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html" style="color:red">Sản phẩm</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
         </nav>
-
-        <div class="product">
-            <h2>Sản phẩm A</h2>
-            <p>Giá: 100.000 VNĐ</p>
-            <button onclick="addToCart('Sản phẩm A', 100000)">Thêm vào giỏ</button>
+    </header>
+    <main>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/raucu_traicay.png" alt="Rau củ">
+                <h3>Rau củ</h3>
+                <p>Giá: 50,000 VND</p>
+                <button onclick="addToCart('Rau củ', 50000, 'images/raucu_traicay.png')">Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="images/rice.png" alt="Gạo ngon">
+                <h3>Gạo ngon</h3>
+                <p>Giá: 200,000 VND</p>
+                <button onclick="addToCart('Gạo ngon', 200000, 'images/rice.png')">Thêm vào giỏ</button>
+            </div>
         </div>
-
-        <div class="product">
-            <h2>Sản phẩm B</h2>
-            <p>Giá: 200.000 VNĐ</p>
-            <button onclick="addToCart('Sản phẩm B', 200000)">Thêm vào giỏ</button>
-        </div>
-
-        <div class="product">
-            <h2>Sản phẩm C</h2>
-            <p>Giá: 300.000 VNĐ</p>
-            <button onclick="addToCart('Sản phẩm C', 300000)">Thêm vào giỏ</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    </main>
+    <script defer src="script.js"></script>
 </body>
 </html>
